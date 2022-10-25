@@ -12,5 +12,7 @@ export class AppComponent {
 
   isGuestListDisplayed: boolean = false;
 
+  displayGuestList: boolean = false;
+
   songList: string[] = ["Alejandro", "Ne me quitte pas", "Le temps est bon"];
 }
