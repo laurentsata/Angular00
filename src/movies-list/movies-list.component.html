@@ -1,0 +1,9 @@
+<p>le drole de ciné!</p>
+<div *appDisplayMovies="showMovies">
+    <ul>
+        <li *ngFor="let movie of moviesList ;let first = first;">
+            <p *ngIf="first;" appHighlight>{{movie}}</p>
+            <p *ngIf="!first;">{{movie}}</p>
+        </li>
+    </ul>
+</div>
