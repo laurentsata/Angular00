@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sign-up.component.css']
 })
 export class SignUpComponent implements OnInit {
-  model: Order = new Order("" , "", "");
+  model: Order = new Order("" , 0, new Date(), "");
   submitted:boolean = false;
   constructor() { }
 
@@ -22,8 +22,16 @@ export class SignUpComponent implements OnInit {
 }
 export class Order {
   constructor(
-      public firstname: string,
-      public lastname: string,
-      public email: string,
+      public title: string,
+      public quantity: number,
+      public date: Date,
+      public contact: string
   ) {}
 }
+// export class Order {
+//   constructor(
+//       public firstname: string,
+//       public lastname: string,
+//       public email: string,
+//   ) {}
+// }
