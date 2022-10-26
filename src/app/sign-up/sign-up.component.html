@@ -55,7 +55,7 @@
   
     <fieldset>
         <label for="pass-order">Mot de passe</label>
-        <input id="pass-order" password="title-order" type="text" [(ngModel)]="model.password" #password="ngModel" required minlength="5" maxlength="15"/>
+        <input id="pass-order" password="title-order" type="password" [(ngModel)]="model.password" #password="ngModel" required minlength="5" maxlength="15"/>
       </fieldset>
 
       <div *ngIf="password.errors && myForm.submitted">
