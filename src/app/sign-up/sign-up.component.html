@@ -1,10 +1,10 @@
 <p>sign-up works!</p>
 
 <form #myForm="ngForm" (ngSubmit)="onSubmit()">
-  <div>
+  <!-- <div>
     Form submitted ? {{ myForm.submitted }} Form valid ? {{ myForm.valid }} Form
     invalid ? {{ myForm.valid }}
-  </div>
+  </div> -->
 
   <fieldset>
     <label for="title-order">Title</label>
@@ -103,7 +103,7 @@
   </fieldset>
   <span
   *ngIf="passwordForm.invalid && passwordForm.dirty && passwordForm.touched"
-></span>
+>
   <div *ngIf="passwordForm.errors">
     <span *ngIf="passwordForm.errors?.['required']"
       >Le mot de passe est requis</span
@@ -115,7 +115,8 @@
       >La longueur maximale doit être inférieure à 15</span
     >
   </div>
-
+</span>
   <button type="reset">Restaurer</button>
   <button type="submit" [disabled]="myForm.invalid">Sauvegarder</button>
+
 </form>
