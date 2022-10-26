@@ -89,12 +89,12 @@
   </div>
 
   <fieldset>
-    <label for="pass-order">Mot de passe</label>
+    <label for="passwordUser-order">Mot de passe</label>
     <input
       id="pass-order"
-      pass="pass-order"
+      pass="passwordUser-order"
       type="password"
-      [(ngModel)]="model.password"
+      [(ngModel)]="model.passwordUser"
       #passwordForm="ngModel"
       required
       minlength="5"
@@ -102,21 +102,20 @@
     />
   </fieldset>
   <span
-  *ngIf="passwordForm.invalid && passwordForm.dirty && passwordForm.touched"
->
-  <div *ngIf="passwordForm.errors">
-    <span *ngIf="passwordForm.errors?.['required']"
-      >Le mot de passe est requis</span
-    >
-    <span *ngIf="passwordForm.errors?.['minlength']"
-      >La longueur maximale doit être supérieure à 5</span
-    >
-    <span *ngIf="passwordForm.errors?.['maxlength']"
-      >La longueur maximale doit être inférieure à 15</span
-    >
-  </div>
-</span>
+    *ngIf="passwordForm.invalid && passwordForm.dirty && passwordForm.touched"
+  >
+    <div *ngIf="passwordForm.errors">
+      <span *ngIf="passwordForm.errors?.['required']"
+        >Le mot de passe est requis</span
+      >
+      <span *ngIf="passwordForm.errors?.['minlength']"
+        >La longueur maximale doit être supérieure à 5</span
+      >
+      <span *ngIf="passwordForm.errors?.['maxlength']"
+        >La longueur maximale doit être inférieure à 15</span
+      >
+    </div>
+  </span>
   <button type="reset">Restaurer</button>
   <button type="submit" [disabled]="myForm.invalid">Sauvegarder</button>
-
 </form>

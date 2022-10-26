@@ -27,6 +27,6 @@ export class Order {
       public quantity: number,
       public date: Date,
       public contact: string,
-      public password: string,
+      public passwordUser: string,
   ) {}
 }
