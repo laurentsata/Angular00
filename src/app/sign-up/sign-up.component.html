@@ -53,6 +53,16 @@
       <span *ngIf="contact.errors?.['email']">L'adresse email doit être valide</span>
     </div>
   
+    <fieldset>
+        <label for="pass-order">Mot de passe</label>
+        <input id="pass-order" password="title-order" type="text" [(ngModel)]="model.password" #password="ngModel" required minlength="5" maxlength="15"/>
+      </fieldset>
+
+      <div *ngIf="password.errors && myForm.submitted">
+          <span *ngIf="password.errors?.['required']">Le mot de passe est requis</span>
+          <span *ngIf="password.errors?.['minlength']">La longueur maximale doit être supérieure à 5</span>
+          <span *ngIf="password.errors?.['maxlength']">La longueur maximale doit être inférieure à 15</span>
+        </div>
   
     <button type="reset">Restaurer</button>
     <button type="submit">Sauvegarder</button>
