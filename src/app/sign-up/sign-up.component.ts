@@ -26,13 +26,6 @@ export class Order {
       public quantity: number,
       public date: Date,
       public contact: string,
-      public password: string
+      public password: string,
   ) {}
 }
-// export class Order {
-//   constructor(
-//       public firstname: string,
-//       public lastname: string,
-//       public email: string,
-//   ) {}
-// }
