@@ -14,6 +14,7 @@ export class SignUpComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
   onSubmit(): void {
     // form submitted
     this.submitted = true;

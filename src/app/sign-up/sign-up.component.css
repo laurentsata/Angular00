@@ -1,0 +1,6 @@
+.ng-invalid button {
+    color: red(219, 86, 86);
+}
+input.ng-invalid.ng-touched.ng-dirty{
+    background-color: rgb(255,0,0,0.1);
+}
