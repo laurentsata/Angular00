@@ -8,6 +8,7 @@ import { DisplayGuestsDirective } from './display-guests.directive';
 
 import { MoviesListComponent } from '../movies-list/movies-list.component';
 import { DisplayMoviesDirective } from './display-movies.directive';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { DisplayMoviesDirective } from './display-movies.directive';
     DisplayGuestsDirective,
     DisplayMoviesDirective,
     MoviesListComponent,
+    SignUpComponent,
   ],
   imports: [
     BrowserModule,
