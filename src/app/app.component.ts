@@ -15,4 +15,11 @@ export class AppComponent {
   displayGuestList: boolean = false;
 
   songList: string[] = ["Alejandro", "Ne me quitte pas", "Le temps est bon"];
+
+  constructor() {}
+  onomatopiaList: string[] = [];
+
+  onReceiveOnomatopia(event: string): void {
+    this.onomatopiaList.push(event);
+  }
 }

@@ -1,12 +1,12 @@
 <div *ngFor="let dev of developer">
-    <h2>Form:</h2>
-    <p class="name">Firstname: {{dev.firstName}}</p>
-    
-    <p>Lastname: {{dev.lastName}}</p>
-    
-    <p>Age: {{dev.age}}</p>
-    
-    <p>Bio: {{dev.bio}}</p>
+  <h2>Form:</h2>
+  <p class="name">Firstname: {{ dev.firstName }}</p>
 
-    <app-skill [name] = 'name' [logo] = 'logo' [site] = 'site'></app-skill>
+  <p>Lastname: {{ dev.lastName }}</p>
+
+  <p>Age: {{ dev.age }}</p>
+
+  <p>Bio: {{ dev.bio }}</p>
+
+  <app-skill [name]="name" [logo]="logo" [site]="site"></app-skill>
 </div>

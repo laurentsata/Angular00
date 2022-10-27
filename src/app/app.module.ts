@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
+
 import { AppComponent } from './app.component';
 import { HighlightDirective } from './highlight.directive';
 import { DisplayGuestsDirective } from './display-guests.directive';
@@ -13,6 +14,7 @@ import { KitchenComponent } from './kitchen/kitchen.component';
 import { MagicOvenComponent } from './magic-oven/magic-oven.component';
 import { DevelopperComponent } from './developper/developper.component';
 import { SkillComponent } from './skill/skill.component';
+import { CreateOnomatopiaComponent } from './create-onomatopia/create-onomatopia.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,7 @@ import { SkillComponent } from './skill/skill.component';
     MagicOvenComponent,
     DevelopperComponent,
     SkillComponent,
+    CreateOnomatopiaComponent,
   ],
   imports: [
     BrowserModule,

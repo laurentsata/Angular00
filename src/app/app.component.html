@@ -31,3 +31,14 @@
 </div>
 <app-kitchen></app-kitchen>
 <app-developper></app-developper>
+<h2>Quête Angular08 @Output</h2>
+
+<div *ngFor="let onomatopia of onomatopiaList">
+  <ul>
+    <li>{{ onomatopia }}</li>
+  </ul>
+</div>
+
+<app-createOnomatopia
+  (onomatopia)="onReceiveOnomatopia($event)"
+></app-createOnomatopia>
