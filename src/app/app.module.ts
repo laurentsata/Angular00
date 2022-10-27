@@ -8,6 +8,9 @@ import { DisplayGuestsDirective } from './display-guests.directive';
 
 import { MoviesListComponent } from '../movies-list/movies-list.component';
 import { DisplayMoviesDirective } from './display-movies.directive';
+import { MenuComponent } from './menu/menu.component';
+import { KitchenComponent } from './kitchen/kitchen.component';
+import { MagicOvenComponent } from './magic-oven/magic-oven.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +19,9 @@ import { DisplayMoviesDirective } from './display-movies.directive';
     DisplayGuestsDirective,
     DisplayMoviesDirective,
     MoviesListComponent,
+    MenuComponent,
+    KitchenComponent,
+    MagicOvenComponent,
   ],
   imports: [
     BrowserModule,
