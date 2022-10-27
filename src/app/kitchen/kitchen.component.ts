@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./kitchen.component.css'],
 })
 export class KitchenComponent implements OnInit {
-  
   flourQuantity: number = 0;
   saltQuantity: number = 0;
   sugarQuantity: number = 0;
@@ -16,12 +15,17 @@ export class KitchenComponent implements OnInit {
 
   isCooked: boolean = false;
 
+  cookiesCooked: number = 0;
+
   constructor() {}
 
   ngOnInit() {}
 
-  startCooking() {
+  startCooking(): void {
     this.isCooked = true;
   }
-}
 
+  onGetCookies(event: number): void {
+    this.cookiesCooked =+ event;
+  }
+}

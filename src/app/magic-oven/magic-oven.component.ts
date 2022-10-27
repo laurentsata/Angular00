@@ -6,32 +6,37 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./magic-oven.component.css']
 })
 export class MagicOvenComponent implements OnInit {
-  
+
 // On initialise notre propriété avec une valeur par défaut
 // On décore notre propriété avec @Input()
 
-  @Input()
-  numberOfCookies: number = 0;
+@Input()
+startCooking: boolean = false;
 
-  @Input()
-  flour: number = 0;
+@Input()
+numberOfCookies: number = 0;
 
-  @Input()
-  salt: number = 0;
+@Input()
+flour: number = 0;
 
-  @Input()
-  sugar: number = 0;
+@Input()
+salt: number = 0;
 
-  @Input()
-  egg: number = 0;
+@Input()
+sugar: number = 0;
 
-  @Input()
-  startCooking: boolean = false;
-  
-  constructor() { }
+@Input()
+egg: number = 0;
 
-  ngOnInit() {
-  }
+@Output()
+cookies: EventEmitter<number> = new EventEmitter(); 
+constructor() { }
 
+ngOnInit(): void {
+}
+
+sendCookies() {
+  this.cookies.emit(this.numberOfCookies);
+}
 
 }

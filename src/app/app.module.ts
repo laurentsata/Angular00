@@ -11,6 +11,8 @@ import { DisplayMoviesDirective } from './display-movies.directive';
 import { MenuComponent } from './menu/menu.component';
 import { KitchenComponent } from './kitchen/kitchen.component';
 import { MagicOvenComponent } from './magic-oven/magic-oven.component';
+import { DevelopperComponent } from './developper/developper.component';
+import { SkillComponent } from './skill/skill.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { MagicOvenComponent } from './magic-oven/magic-oven.component';
     MenuComponent,
     KitchenComponent,
     MagicOvenComponent,
+    DevelopperComponent,
+    SkillComponent,
   ],
   imports: [
     BrowserModule,
